@@ -2,12 +2,12 @@
 
 
 Install the build files 🏗
-### `npm i`
+`npm i`
 
 Build the files 📁
 
-### `npm run build`
+`npm run build`
 
 Run the server 🌎
 
-### `npm run dev`
+`npm run dev`

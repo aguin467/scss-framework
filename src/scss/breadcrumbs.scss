@@ -1,0 +1,46 @@
+// Styles for Breadcrumbs
+nav.breadcrumb {
+  padding: 0.25rem 2rem;
+  background-color: rgba($muted-color, 0.15);
+
+  // Breadrumbs List
+  ol {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    // Breadcrumbs list items
+    li {
+      margin-right: 1.5em;
+      position: relative;
+      color: $dark-color;
+
+      // Adding '/' after all list items except last one
+      &:not( :last-of-type )::after {
+        content: $breadcrumb-divider;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 120%;
+      }
+
+      // Links
+      a {
+        &:link,
+        &:visited {
+          color: darken($color: $primary-color, $amount: 5);
+          text-decoration: none;
+          transition: text-decoration 0.2s ease;
+        }
+
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+// File for button styles
+button {
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.dark-mode {
+  background-color: darken($dark-color, 20%);
+  color: $light-color;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: box-shadow 0.2s ease;
+  outline: none;
+  text-align: center;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  &.btn-lg {
+    font-size: 1.3rem;
+  }
+
+  &.btn-sm {
+    font-size: 0.7rem;
+  }
+
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  &.disabled,
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.btn-primary {
+    background-color: $primary-color;
+    color: $light-color;
+  }
+
+  &.btn-secondary {
+    background-color: $secondary-color;
+    color: $light-color;
+  }
+
+  &.btn-success {
+    background-color: $success-color;
+    color: $light-color;
+  }
+
+  &.btn-warning {
+    background-color: $warning-color;
+    color: $dark-color;
+  }
+
+  &.btn-danger {
+    background-color: $danger-color;
+    color: $light-color;
+  }
+
+  &.btn-info {
+    background-color: $info-color;
+    color: $light-color;
+  }
+
+  &.btn-light {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+
+  &.btn-dark {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+  &.btn-toggle {
+    font-weight: normal;
+    border: 1px solid $dark-color;
+    color: $dark-color;
+  }
+
+  &.btn-outline-primary {
+    font-weight: normal;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+
+  &.btn-outline-secondary {
+    font-weight: normal;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+  }
+
+  &.btn-outline-info {
+    font-weight: normal;
+    border: 1px solid $info-color;
+    color: $info-color;
+  }
+
+  &.btn-outline-success {
+    font-weight: normal;
+    border: 1px solid $success-color;
+    color: $success-color;
+  }
+
+  &.btn-outline-warning {
+    font-weight: normal;
+    border: 1px solid $warning-color;
+    color: darken($color: $warning-color, $amount: 5);
+  }
+
+  &.btn-outline-danger {
+    font-weight: normal;
+    border: 1px solid $danger-color;
+    color: $danger-color;
+  }
+
+  &.btn-outline-light {
+    font-weight: normal;
+    border: 1px solid $light-color;
+    color: $light-color;
+  }
+
+  &.btn-outline-dark {
+    font-weight: normal;
+    border: 1px solid $dark-color;
+    color: $dark-color;
+  }
+}

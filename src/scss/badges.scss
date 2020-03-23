@@ -1,0 +1,55 @@
+// Styles for Badges
+.badge {
+  // Basic styles for all badges
+  display: inline-block;
+  padding: .25em .5em;
+  margin: 0 .3em;
+  font-size: .8em;
+
+  // Pill style
+  &.badge-pill {
+    border-radius: 1em;
+  }
+
+  // Colors
+  &.badge-primary {
+    color: $light-color;
+    background-color: $primary-color;
+  }
+
+  &.badge-secondary {
+    color: $light-color;
+    background-color: $secondary-color;
+  }
+
+  &.badge-info {
+    color: $light-color;
+    background-color: $info-color;
+  }
+
+  &.badge-success {
+    color: $light-color;
+    background-color: $success-color;
+  }
+
+  &.badge-warning {
+    color: $light-color;
+    background-color: $warning-color;
+  }
+
+  &.badge-danger {
+    color: $light-color;
+    background-color: $danger-color;
+  }
+
+  &.badge-dark {
+    color: $light-color;
+    background-color: $dark-color;
+  }
+
+  &.badge-light {
+    color: $dark-color;
+    background-color: $light-color;
+  }
+}
+

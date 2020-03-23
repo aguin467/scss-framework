@@ -2,6 +2,7 @@
 
 
 Install the build files 🏗
+
 `npm i`
 
 Build the files 📁
